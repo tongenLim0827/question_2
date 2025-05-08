@@ -1,0 +1,44 @@
+.nav-rail {
+    background-color: #004366;
+    height: fit-content;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.header-container {
+    padding-left: 8px;
+    padding-right: 8px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-container {
+    padding-left: 8px;
+    padding-right: 8px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product,
+.people,
+.marketing,
+.commerce,
+.goods,
+.operation,
+.transaction,
+.data,
+.integration,
+.system {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    border-top: 1px solid #FFFFFF1F;
+    padding-bottom: 8px;
+}
