@@ -11,18 +11,9 @@ body {
   display: flex;
 }
 
-
-
 .main {
   display: block;
+  flex: 1;
 }
 
-.nav-bar-settings {
-  background-color: #FFFFFF;
-  padding-right: 16px;
-  padding-left: 16px;
-  border: 1px solid #E0E0E0 ;
-  gap: 8px;
-  display: flex;
-}
 
