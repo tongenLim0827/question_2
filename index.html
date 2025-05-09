@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/nav-rail.css" />
   <link rel="stylesheet" href="css/nav-bar.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tabs-group.css" />
+  <link rel="stylesheet" href="css/content.css" />
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 
 <body>
@@ -85,7 +88,6 @@
     </div>
 
 
-
     <div class="main">
       <div class="nav-bar-settings-container">
         <div class="breadcrumb">
@@ -101,17 +103,14 @@
             <img src="images/nav-bar-settings/Search.svg"/>
             <div class="notification-container">
                 <img src="images/nav-bar-settings/Status.svg"/>
-                <img src="images/nav-bar-settings/Badge.svg" style="position: absolute; top: -6px;
-                right: -6px;
-                width: 16px;
-                height: 16px;"/>
+                <img src="images/nav-bar-settings/Badge.svg" class="batch-icon"/>
             </div>
           </div>
           <div class="user-details">
             <img src="images/nav-bar-settings/Image placeholder.svg" style="width: 32px; height: 32px;"/>
             <div class="details">
-              <p style="font-size: 14px; line-height: 18px; color: #0A0A0A;">User name</p>
-              <p style="font-size: 10px; line-height: 12px; color: #616161;">Company name</p>
+              <p style="font-size: 14px; line-height: 18px; color: #0A0A0A;">User Name </p>
+              <p style="font-size: 10px; line-height: 12px; color: #616161;">Company Name</p>
             </div>
             <img src="images/nav-bar-settings/Arrow Drop Down.svg"/>
           </div>
@@ -120,10 +119,23 @@
       </div>
 
       <div class="tabs-group-container">
-
+        <div class="frame-tab"><p>Buyer's e-Invoice</p></div>
+        <div class="frame-tab"><p>Supplier's e-Invoice</p></div>
+        <div class="frame-tab"><p>Self-billed e-Invoice</p></div>
+        <div class="frame-tab"><p>Product</p></div>
+        <div class="frame-tab"><p>Customer</p></div>
+        <div class="frame-tab"><p>Supplier</p></div>
+        <div class="frame-tab active"><p>Settings</p></div>
       </div>
 
       <div class="content-container">
+        <div class="title-bar-settings">
+          <div class="title-bar">
+            <p>Setings</p>
+            <button class="save-btn">Save</button>
+          </div>
+          <img src="images/content/expand.svg" style="width: 20px; height: 20px;"/>
+        </div>
 
       </div>
 
