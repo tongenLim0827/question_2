@@ -6,12 +6,22 @@ body {
 }
 
 .container {
-  height: 100vh;
   margin: 0 auto;
   display: flex;
 }
 
+.nav-rail {
+  background-color: #004366;
+  height: fit-content;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .main {
+  background-color: #F5F5F5;
   display: inline;
   flex: 1;
 }

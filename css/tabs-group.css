@@ -1,4 +1,5 @@
 .tabs-group-container {
+    background-color: #FFFFFF;
     box-sizing: border-box;
     box-shadow: inset 0 -1px 0 0 #E0E0E0;
     padding-left: 8px;
@@ -7,11 +8,11 @@
 }
 
 .frame-tab {
-    transform: translateZ(0);
+    /* transform: translateZ(0); */
     gap: 4px;
     height: 40px;
     margin: 0px;
-    border-bottom: 1px solid #E0E0E0; /* Apply baseline border to the container */
+    border-bottom: 1px solid #E0E0E0;
     box-sizing: border-box;
 }
 
