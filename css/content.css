@@ -1,7 +1,6 @@
 .content-container {
     background-color: #F5F5F5;
     display: block;
-    /* align-items: stretch; */
     flex: 1;
 }
 
@@ -205,7 +204,7 @@
 
 .field select[name="Select"],
 .field-5 select[name="Select"] {
-    appearance: none; /* Hides default arrow */
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background:  url("../images/dropdown.svg")
