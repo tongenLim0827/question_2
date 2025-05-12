@@ -1,5 +1,8 @@
 .content-container {
+    background-color: #F5F5F5;
     display: block;
+    /* align-items: stretch; */
+    flex: 1;
 }
 
 .title-bar-settings {
@@ -49,6 +52,7 @@
     gap: 16px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .forms-header {
@@ -111,6 +115,12 @@
     display: flex;
     align-items: flex-start;
     height: 156px;
+}
+
+.field-5 {
+    gap: 8px;
+    display: flex;
+    align-items: flex-start;
 }
 
 /* for field 1 in each row */
@@ -193,22 +203,31 @@
     letter-spacing: 0px;
 }
 
-.field select[name="Select"] {
+.field select[name="Select"],
+.field-5 select[name="Select"] {
+    appearance: none; /* Hides default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background:  url("../images/dropdown.svg")
+              no-repeat right 8px center;
+
     flex: 1;
     border-radius: 4px;
-    border: 1px solid #E0E0E0;
+    box-sizing: content-box;
+    border: 1px solid #E0E0E0; 
     flex-grow: 1;
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .field input[type="text"],
-.field-3 input[type="text"]  {
+.field-3 input[type="text"],
+.field-5 input[type="text"] {
     flex: 1;
     border-radius: 4px;
     border: 1px solid #E0E0E0;
@@ -246,6 +265,20 @@
     height: 32px;
     border-radius: 4px;
     border: 1px solid #E0E0E0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #757575;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background:  url("../images/dropdown.svg")
+              no-repeat right 8px center;
 }
 
 .checkbox-container {
@@ -292,7 +325,7 @@
     height: 100%;
 }
 
-.text-span-container input[type="text"]  {
+.text-span-container textarea[name="text-area"] {
     flex: 1;
     border-radius: 4px;
     border: 1px solid #E0E0E0;
@@ -303,6 +336,7 @@
     letter-spacing: 0px;
     padding-left: 8px;
     padding-right: 8px;
+    resize: none;
 }
 
 .word-count {
@@ -334,8 +368,57 @@
 }
 
 .row-text-container select[name="tall-select"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background:  url("../images/dropdown.svg")
+              no-repeat right 8px center;
+
     flex: 1;
     height: 32px;
     border-radius: 4px;
     border: 1px solid #E0E0E0;
+}
+
+.address-container {
+    gap: 8px;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.field-5 select[name="tall-select"] {
+    flex: 1;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #0A0A0A;
+}
+
+.footer-container {
+    background-color: #FFFFFF;
+    padding: 4px 16px 4px 16px;
+    gap: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 -1px 0 0 #E0E0E0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.version {
+    gap: 4px;
+}
+
+.version p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin: 0px;
+    color: #00000099;
 }

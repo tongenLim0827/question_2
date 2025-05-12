@@ -26,38 +26,32 @@
       <!--------------------------TABS-CONTAINER-------------------------->
       <div class="tabs-container">
         <div class="product">
-          <div class="section"></div>
           <img src="images/product/product.svg">
           <img src="images/product/trade-agreement.svg">
           <img src="images/product/trade-promotion.svg">
         </div>
         
         <div class="people">
-          <div class="section"></div>
           <img src="images/people/team.svg">
           <img src="images/people/business-partner.svg">
         </div>
 
         <div class="marketing">
-          <div class="section"></div>
           <img src="images/marketing/Engagement.svg">
           <img src="images/marketing/Reward.svg">
         </div>
 
         <div class="commerce">
-          <div class="section"></div>
           <img src="images/commerce/E-Commerce.svg">
           <img src="images/commerce/Warranty.svg">
         </div>
 
         <div class="goods">
-          <div class="section"></div>
           <img src="images/goods/Warehouse.svg">
           <img src="images/goods/Logistics.svg">
         </div>
 
         <div class="operation">
-          <div class="section"></div>
           <img src="images/operation/Workflow.svg">
           <img src="images/operation/Task.svg">
           <img src="images/operation/Journey plan.svg">
@@ -65,24 +59,17 @@
         </div>
 
         <div class="transaction">
-          <div class="section"></div>
           <img src="images/transaction/Document.svg">
           <img src="images/transaction/Task transaction.svg">
         </div>
 
         <div class="data">
-          <div class="section"></div>
           <img src="images/data/Insights.svg">
         </div>
 
         <div class="integration">
-          <div class="section"></div>
           <img src="images/integration/Primary tab.svg">
           <img src="images/integration/Sync manager.svg">
-        </div>
-
-        <div class="system">
-          <div class="section"></div>
         </div>
       </div>
     </div>
@@ -167,7 +154,9 @@
                   <span>:</span>
                 </div>
                 <div class="selection-container">
-                  <select name="Select">Select</select>
+                  <select name="Select">
+                    <option value="">Select</option>
+                  </select>
                   <div class="checkbox-container">
                     <input type="checkbox"/>
                     <p>N/A</p>
@@ -241,14 +230,17 @@
             <div class="content-row">
               <div class="field">
                 <div class="field-name-container">
-                  <div class="field-name">
-                    <p>MSIC Code</p>
-                    <span class="asterisk-red">*</span>
-                    <img src="images/content/Status.svg"/>
-                  </div>
+                    <div class="field-name">
+                      <p>MSIC Code</p>
+                      <span class="asterisk-red">*</span>
+                      <img src="images/content/Status.svg"/>
+                    </div>
                   <span>:</span>
                 </div>
-                <select name="Select">Select</select>
+                <select name="Select">
+                  <option value=""></option>
+                  <option value="96094 Pet care services">96094 Pet care services</option>
+                </select>
               </div>
 
               <div class="field">
@@ -314,17 +306,17 @@
                 </div>
 
                 <div class="text-span-container">
-                  <input type="text"/>
+                  <textarea name="text-area" id="text-area-input">A text area lets users enter long form text which spans over multiple lines.</textarea>
                   <div class="word-count">
-                    <p>0 characters</p>
+                    <p id="char-count">0 characters</p>
                   </div>
                 </div>
               </div>
             </div>
 
              <!-------------------------- ROW 6 -------------------------->
-            <div class="content-row-single">
-              <div class="field">
+            <div class="content-row-address">
+              <div class="field-5">
                 <div class="field-name-container-5">
                   <div class="field-name">
                     <p>Address</p>
@@ -333,31 +325,48 @@
                   </div>
                   <span>:</span>
                 </div>
-                <div class="multiple-text-container">
-                  <div class="row-text-container">
-                    <input type="text" />
-                    <input type="text" />
+                <div class="address-container">
+                  <div class="multiple-text-container">
+                    <div class="row-text-container">
+                      <input type="text" />
+                      <input type="text" />
+                    </div>
+                    <div class="row-text-container">
+                      <select name="Select">
+                        <option value=""></option>
+                        <option value="Malaysia">Malaysia</option>
+                      </select>
+                      <select name="tall-select">
+                        <option value=""></option>
+                        <option value="Selangor">Selangor</option>
+                      </select>
+                      <select name="Select">
+                        <option value=""></option>
+                        <option value="Petaling Jaya">Petaling Jaya</option>
+                      </select>
+                      <select name="Select">
+                        <option value=""></option>
+                        <option value="46350">46350</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="row-text-container">
-                    <select name="Select">Select</select>
-                    <select name="tall-select">Select</select>
-                    <select name="Select">Select</select>
-                    <select name="Select">Select</select>
+                  <div class="checkbox-container">
+                    <input type="checkbox"/>
+                    <p>Partial N/A</p>
                   </div>
                 </div>
-                
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
       <div class="footer-container">
-
+        <div class="version">
+          <p>v1234.05</p>
+        </div>
       </div>
     </div>
-
   </div>
   <script src="app.js"></script>
 </body>

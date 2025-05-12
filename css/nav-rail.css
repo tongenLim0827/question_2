@@ -26,9 +26,7 @@
 .system {
     display: flex;
     flex-direction: column;
-}
-
-.section {
-    border-top: 1px solid #FFFFFF1F;
-    padding-bottom: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 -1px 0 0 #FFFFFF1F;
+    padding-top: 8px;
 }

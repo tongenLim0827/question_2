@@ -1,7 +1,9 @@
-const input = document.getElementById('input');
-const counter = document.getElementById('char-counter');
+const input = document.getElementById('text-area-input');
+const counter = document.getElementById('char-count');
 
-input.addEventListener('input', () => {
-  counter.textContent = `${input.value.length} / ${input.maxLength}`;
-});
+function updateCharCount() {
+  counter.textContent = `${input.value.length} character${input.value.length === 1 ? '' : 's'}`;
+}
 
+updateCharCount();
+input.addEventListener('input', updateCharCount);
